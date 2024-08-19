@@ -27,7 +27,7 @@ const Navbar = () => {
                         </a>
 
                         <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
-                        Music
+                        Musics
                         </a>
 
                         <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
@@ -36,6 +36,10 @@ const Navbar = () => {
 
                         <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
                         Reviews
+                        </a>
+
+                        <a href="/" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+                        Profile
                         </a>
                     </div>
                 </div>
@@ -88,7 +92,7 @@ const Navbar = () => {
                         <a href="/" 
                         className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
                         >
-                        Music
+                        Musics
                         </a>
 
                         <a href="/" 
@@ -101,6 +105,12 @@ const Navbar = () => {
                         className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
                         >
                         Reviews
+                        </a>
+
+                        <a href="/" 
+                        className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
+                        >
+                        Profile
                         </a>
                 </div>
             </div>
