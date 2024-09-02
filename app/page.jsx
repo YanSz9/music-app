@@ -1,8 +1,6 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import Carousel from "./Carousel";
 
 export default function Home() {
@@ -19,12 +17,8 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <main className="flex flex-col items-center justify-center min-h-screen">
-        {images.length > 0 ? <Carousel images={images} /> : <p>Loading...</p>}
-      </main>
-      <Footer />
-    </>
+    <main className="flex flex-col items-center justify-center min-h-screen">
+      {images.length > 0 ? <Carousel images={images} /> : <p>Loading...</p>}
+    </main>
   );
 }
