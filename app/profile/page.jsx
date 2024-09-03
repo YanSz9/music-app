@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import FavoriteArtistsCarousel from "./FavoriteArtistsCarousel";
-import FavoriteSongsCarousel from "./FavoriteSongsCarousel";
+import Slider from "./Slider";
 
 const Profile = () => {
   const [artists, setArtists] = useState([]);
@@ -37,30 +36,30 @@ const Profile = () => {
         <h2 className="text-2xl font-semibold">John Doe</h2>
         <p className="text-gray-600">johndoe@example.com</p>
       </div>
-      <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/2 md:pr-4">
-          <FavoriteArtistsCarousel artists={artists} />
-          <FavoriteSongsCarousel songs={songs} />
-        </div>
-        <div className="md:w-1/2">
-          <div className="mt-8">
-            <h3 className="text-xl font-semibold mb-2">About Me</h3>
-            <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
-              Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu
-              venenatis.
-            </p>
-          </div>
-          <div className="mt-8">
-            <h3 className="text-xl font-semibold mb-2">My Music Preferences</h3>
-            <ul className="list-disc list-inside">
-              <li>Rock</li>
-              <li>Jazz</li>
-              <li>Classical</li>
-            </ul>
-          </div>
-        </div>
+      <div className="mt-8">
+        <h3 className="text-xl font-semibold mb-2">Favorite Artists</h3>
+        <Slider items={artists} />
+      </div>
+      <div className="mt-8">
+        <h3 className="text-xl font-semibold mb-2">Favorite Songs</h3>
+        <Slider items={songs} />
+      </div>
+      <div className="mt-8">
+        <h3 className="text-xl font-semibold mb-2">About Me</h3>
+        <p className="text-gray-700">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
+          Morbi a bibendum metus. Donec scelerisque sollicitudin enim eu
+          venenatis.
+        </p>
+      </div>
+      <div className="mt-8">
+        <h3 className="text-xl font-semibold mb-2">My Music Preferences</h3>
+        <ul className="list-disc list-inside">
+          <li>Rock</li>
+          <li>Jazz</li>
+          <li>Classical</li>
+        </ul>
       </div>
     </div>
   );
